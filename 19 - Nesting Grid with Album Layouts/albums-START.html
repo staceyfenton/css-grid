@@ -97,6 +97,30 @@
 
 
   <style>
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .album {
+      background: rgba(255, 255, 255, .2);
+      color: #fff;
+      display: grid;
+      grid-template-columns: 150px auto;
+      grid-gap: 10px;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .album__artwork {
+      max-width: 100%;
+    }
+
+    .album__artist,
+    .album__desc {
+      font-weight: 400;
+    }
   </style>
 </body>
 
